@@ -1,0 +1,12 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: movie-ratings-sp
+  labels:
+    release: prometheus-operator
+spec:
+  selector:
+    matchLabels:
+      app: movie-ratings-sp
+  endpoints:
+  - port: metrics

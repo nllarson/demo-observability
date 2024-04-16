@@ -1,0 +1,19 @@
+{
+  "namespace": "com.improving.demo.avro",
+  "type": "record",
+  "name": "Movie",
+  "fields": [
+    {"name": "id", "type": "long"},
+    {"name": "title", "type": "string"},
+    {"name": "release_year", "type": "int"}
+  ],
+  "arg.properties": {
+    "options":[
+        {"id": 294, "title": "Die Hard", "release_year": 1988},
+        {"id": 354, "title": "Tree of Life", "release_year": 2011},
+        {"id": 782, "title": "A Walk in the Clouds", "release_year": 1995},
+        {"id": 128, "title": "The Big Lebowski", "release_year": 1998},
+        {"id": 780, "title": "Super Mario Bros.", "release_year": 1993}
+    ]
+  }
+}

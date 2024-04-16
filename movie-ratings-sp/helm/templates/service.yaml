@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: movie-ratings-sp
+  labels:
+    app: movie-ratings-sp
+spec:
+  selector:
+    app: movie-ratings-sp
+  ports:
+  - name: metrics
+    port: 9464

@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: ratings-producer
+  labels:
+    app: ratings-producer
+spec:
+  selector:
+    app: ratings-producer
+  ports:
+  - name: metrics
+    port: 9464

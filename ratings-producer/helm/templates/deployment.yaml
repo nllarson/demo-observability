@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ratings-producer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ratings-producer
+  template:
+    metadata:
+      labels:
+        app: ratings-producer
+    spec:
+      containers:
+      - name: ratings-producer
+        image: nllarson/ratings-producer:latest
+        pullPolicy: Always
+        ports:
+        - name: metrics
+          containerPort: 9464

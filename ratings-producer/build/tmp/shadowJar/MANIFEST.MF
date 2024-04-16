@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Class-Path: slf4j-simple-2.0.7.jar opentelemetry-kafka-exporter-1.33.0-a
+ lpha.jar kafka-streams-avro-serde-7.3.0.jar kafka-avro-serializer-7.3.0
+ .jar kafka-schema-serializer-7.3.0.jar kafka-schema-registry-client-7.3
+ .0.jar kafka-clients-7.3.0-ccs.jar avro-1.11.1.jar opentracing-kafka-cl
+ ient-0.1.15.jar opentelemetry-sdk-trace-1.35.0.jar opentelemetry-sdk-co
+ mmon-1.35.0.jar opentelemetry-api-1.35.0.jar common-utils-7.3.0.jar slf
+ 4j-api-2.0.7.jar jackson-annotations-2.13.2.jar jackson-databind-2.13.2
+ .2.jar jackson-core-2.13.2.jar commons-compress-1.21.jar opentelemetry-
+ proto-1.0.0-alpha.jar opentracing-util-0.33.0.jar opentracing-noop-0.33
+ .0.jar opentracing-api-0.33.0.jar opentelemetry-context-1.35.0.jar guav
+ a-30.1.1-jre.jar logredactor-1.0.10.jar swagger-annotations-2.1.10.jar 
+ protobuf-java-3.23.4.jar failureaccess-1.0.1.jar listenablefuture-9999.
+ 0-empty-to-avoid-conflict-with-guava.jar jsr305-3.0.2.jar checker-qual-
+ 3.8.0.jar error_prone_annotations-2.5.1.jar j2objc-annotations-1.3.jar 
+ re2j-1.6.jar logredactor-metrics-1.0.10.jar minimal-json-0.9.5.jar
+Main-Class: com.improving.demo.RatingsProducer
+

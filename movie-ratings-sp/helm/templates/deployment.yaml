@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: movie-ratings-sp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: movie-ratings-sp
+  template:
+    metadata:
+      labels:
+        app: movie-ratings-sp
+    spec:
+      containers:
+      - name: movie-ratings-sp
+        image: nllarson/movie-ratings-sp:latest
+        pullPolicy: Always
+        ports:
+        - name: metrics
+          containerPort: 9464
